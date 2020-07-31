@@ -1,3 +1,9 @@
+def game_instructions():
+    print()
+    print("Let's Play!!!")
+    print("Enter \"rock\",\"paper\",\"scissors\" to play")
+    print()
+
 import random
 import os
 import time
@@ -57,3 +63,16 @@ def play_game(name, game_map, results_matrix):
         print()
         time.sleep(2)
         clear()
+
+# The mapping between moves and numbers
+game_map = {0:"rock", 1:"paper", 2:"scissors"}
+ 
+# Win-lose matrix for traditional game
+results_matrix = [[-1, 1, 0], [1, -1, 2], [0, 2, -1]]
+
+
+if __name__ == '__main__':
+
+    name, age, gender = get_player_info()
+
+    play_game(name, game_map, results_matrix)
