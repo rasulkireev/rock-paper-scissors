@@ -12,4 +12,4 @@ if __name__ == '__main__':
 
     name, age, gender = get_player_info()
 
-    play_game(game_map, results_matrix)
+    play_game(name, game_map, results_matrix)

@@ -13,7 +13,7 @@ def get_player_info():
 
     return name, age, gender
 
-def play_game(game_map, results_matrix):
+def play_game(name, game_map, results_matrix):
     
     while True:
         game_instructions()
